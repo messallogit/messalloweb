@@ -1,0 +1,126 @@
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>MESSALLO</title>
+<meta name="viewport" content="width=device-width" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="layout/styles/layout.css" type="text/css" />
+<script type="text/javascript" src="layout/scripts/jquery.min.js"></script>
+<script type="text/javascript" src="layout/scripts/jquery.ui.min.js"></script>
+<script type="text/javascript" src="layout/scripts/jquery.defaultvalue.js"></script>
+<script type="text/javascript" src="layout/scripts/jquery.scrollTo-min.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+    $("#fullname, #validemail, #message").defaultvalue("Full Name", "Email Address", "Message");
+    $('#shout a').click(function () {
+        var to = $(this).attr('href');
+        $.scrollTo(to, 1200);
+        return false;
+    });
+    $('a.topOfPage').click(function () {
+        $.scrollTo(0, 1200);
+        return false;
+    });
+    $("#tabcontainer").tabs({
+        event: "click"
+    });
+});
+</script>
+<!-- Homepage Only Scripts -->
+<script type="text/javascript" src="layout/scripts/jquery.cycle.min.js"></script>
+<script type="text/javascript">
+$(function() {
+    $('#hpage_slider').after('<div id="fsn"><ul id="fs_pagination">').cycle({
+        timeout: 5000,
+        fx: 'fade',
+        pager: '#fs_pagination',
+        pause: 1,
+        pauseOnPagerHover: 0
+    });
+});
+</script>
+<script type="text/javascript" src="layout/scripts/piecemaker/swfobject/swfobject.js"></script>
+<script type="text/javascript">
+var flashvars = {};
+flashvars.cssSource = "layout/scripts/piecemaker/piecemaker.css";
+flashvars.xmlSource = "layout/scripts/piecemaker/piecemaker.xml";
+var params = {};
+params.play = "false";
+params.menu = "false";
+params.scale = "showall";
+params.wmode = "transparent";
+params.allowfullscreen = "true";
+params.allowscriptaccess = "sameDomain";
+params.allownetworking = "all";
+swfobject.embedSWF('layout/scripts/piecemaker/piecemaker.swf', 'piecemaker', '960', '430', '10', null, flashvars, params, null);
+</script>
+
+</head>
+<body id="top">
+<div class="wrapper col1">
+  <div id="topbar" class="clear">
+    <ul>
+      <li><a href="#">WELCOM TO MESSALLO  WEB </a></li>
+      <li><a href="#">DOMAIN GIT HUB</a></li>
+      <li><a href="#">HOST GITHUB MESSALLO</a></li>
+      <li class="last"><a href="#"></a></li>
+    </ul>
+    <form action="#" method="post" id="MESSALLO">
+      
+    </form>
+  </div>
+</div>
+
+<div class="wrapper col2">
+  <div id="header" class="clear">
+    <div class="fl_left">
+      <h1><a href="index.html"> MESSALLO </a></h1>
+      <p>WHO IS MESSALLO</p>
+    </div>
+    <div id="topnav">
+      <ul>
+        <li class="last"><a href="wa.me/+918921419013">whatsapp</a><span>please wait</span></li>
+        <li><a href="#">about messallo</a><span>working on it</span></li>
+        <li><a href="#"></a><span></span>
+          <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+          </ul>
+        </li>
+        <li><a href="https://www.instagram.com/messallo._.24/?igshid=YmMyMTA2M2Y%3D">instagram</a><span>Test Text Here</span></li>
+        <li><a href="https://www.youtube.com/channel/UCNVlmOSz8hY31rn1gy5amQw">youtube</a><span>Test Text Here</span></li>
+        <li class="active"><a href="index.html">Homepage</a><span>Test Text Here</span></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="wrapper col3">
+  <div id="featured_slide"> 
+   
+    <div id="piecemaker"><img src="images/demo/piecemaker/960x360.gif" alt="" /></div>
+   
+  </div>
+</div>
+
+<div class="wrapper col4">
+  <div id="container" class="clear"> 
+    
+    <div id="shout" class="clear">
+      <div class="fl_left">
+        <h2>CONTACT ME FOR ANY HELP</h2>
+        <p> </p>
+      </div>
+     <p class="fl_right"><a href="https://www.instagram.com/messallo._.24/">Contact ME </a></p>
+    </div>
+  
+    
+       
+  </div>
+</div>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</body>
+</html>
